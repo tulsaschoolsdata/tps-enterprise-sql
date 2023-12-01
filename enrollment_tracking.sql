@@ -22,7 +22,7 @@ WITH STUD AS (
   FROM
     TERMS
   WHERE
-    REGEXP_LIKE(TERMS.NAME, '[0-9]{2}-[0-9]{2}')
+    REGEXP_LIKE(TERMS.NAME, '[0-9]{4}-[0-9]{4}$')
 ), CYE AS (
  -- current enrollment equal entry and exit dates  should be yearid 33
   SELECT
